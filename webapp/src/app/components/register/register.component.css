@@ -1,0 +1,47 @@
+.div{
+  margin: auto;
+  width: 50%;  
+  padding: 10px;
+  
+}
+.back{
+  /* background:url("../../../mask.jpeg")center; */
+  background: url("https://www.thehindu.com/opinion/op-ed/27sje1/article31145452.ece/ALTERNATES/LANDSCAPE_1200/24THiStock-1209623300")center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .card-container.card {
+    max-width: 400px !important;
+    padding: 30px 40px;
+    opacity: 80%;
+    align-content: center;
+  }
+  
+  .card {
+    background-color:white;
+    
+    margin: 0 auto 25px;
+    
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 10px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .profile-img-card {
+    width: 75px;
+    height: 5px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+  }

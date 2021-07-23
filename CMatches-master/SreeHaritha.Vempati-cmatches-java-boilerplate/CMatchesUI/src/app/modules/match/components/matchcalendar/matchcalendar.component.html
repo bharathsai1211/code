@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<h1>Match Calendar</h1>
+<mat-list *ngFor="let match of matchescalendar ">
+  <mat-list-item>{{match.name}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button mat-fab-warn class ="warn-button" >{{match.date}}</button>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  
+</mat-list>
+

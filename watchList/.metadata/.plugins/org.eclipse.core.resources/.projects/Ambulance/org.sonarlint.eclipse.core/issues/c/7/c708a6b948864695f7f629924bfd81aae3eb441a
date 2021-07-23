@@ -1,0 +1,8 @@
+
+h
+java:S3655"7Call "Optional#isPresent()" before accessing the value.(ô¤Ïúÿÿÿÿ8‰ÇÑ­/HõRMAJORZBUG
+d
+java:S3655$"3Call "book.isPresent()" before accessing the value.(ÄØúÿÿÿÿ8ª×î­/HöRMAJORZBUG
+Œ
+java:S2293,"YReplace the type specification in this constructor call with the diamond operator ("<>").(­‹Ëº8¤¯©±/H°RMINORZ
+CODE_SMELL

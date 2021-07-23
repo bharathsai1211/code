@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<h1>Previous Matches</h1>
+<div class="previous">
+  
+<mat-card class="previous-card" *ngFor="let match of previousMatches">
+  <mat-card-content>
+    <mat-card-title>
+    {{match.description}}
+  </mat-card-title>
+  </mat-card-content>
+  <mat-card-footer>
+      <button  class="previousAddButton" mat-raised-button color=primary (click)="addToFavouriteList(match)">Add To Favorites  <i class="fa fa-star" aria-hidden="true"></i></button>  
+      <button  mat-raised-button color=primary (click)="viewScore(match)">view score</button>  
+
+  </mat-card-footer>
+</mat-card>
+<br>
+</div>

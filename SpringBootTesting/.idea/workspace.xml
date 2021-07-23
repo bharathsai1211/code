@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="430f3b7a-31ed-423b-a11a-c46d4a3514f0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/spring-boot-testing" />
+  </component>
+  <component name="ProjectId" id="1nNGQlp8KkQddRo1srU7AHApULw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/JWTDemo" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="430f3b7a-31ed-423b-a11a-c46d4a3514f0" name="Default Changelist" comment="" />
+      <created>1611223122910</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611223122910</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="339" y="94" width="593" height="389" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611223565812">
+      <screen x="0" y="24" width="1280" height="530" />
+    </state>
+    <state x="339" y="94" width="593" height="389" key="#com.intellij.fileTypes.FileTypeChooser/0.24.1280.530@0.24.1280.530" timestamp="1611223565812" />
+    <state x="423" y="47" width="426" height="483" key="FileChooserDialogImpl" timestamp="1611290616312">
+      <screen x="0" y="24" width="1280" height="530" />
+    </state>
+    <state x="423" y="47" width="426" height="483" key="FileChooserDialogImpl/0.24.1280.530@0.24.1280.530" timestamp="1611290616312" />
+    <state x="296" y="116" key="com.intellij.ide.util.TipDialog" timestamp="1611290584165">
+      <screen x="0" y="24" width="1280" height="530" />
+    </state>
+    <state x="296" y="116" key="com.intellij.ide.util.TipDialog/0.24.1280.530@0.24.1280.530" timestamp="1611290584165" />
+  </component>
+</project>

@@ -1,0 +1,18 @@
+.navbar
+{
+    background-color: rgb(26, 145, 224) !important;
+    border-bottom: 2px solid coral !important;
+    color: black !important;
+}
+.active-link
+{
+    color: gold !important;
+}
+i{
+    margin-left:2px;
+    font-size: 2em !important;
+}
+/* header{
+    position: fixed;
+    width: 100%;
+} */

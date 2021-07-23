@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: bhara
+Build-Jdk: 14.0.2
+Implementation-Title: maincourse_java_jfse_mc04_outcome06_01
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.stackroute
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/maincourse_java_jfse_mc04_outcome06_01
+Created-By: Maven Integration for Eclipse
+

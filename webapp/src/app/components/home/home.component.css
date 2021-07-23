@@ -1,0 +1,97 @@
+#cen{
+    text-align: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    border-radius: 5px;
+    background: linear-gradient(180deg,rgb(179,179,186) 0%,rgb(193, 209, 209));
+}
+.page{
+    padding: 2rem;
+}
+.mainbody{
+    background-image:url("https://img.etimg.com/thumb/msid-76340801,width-650,imgsize-389237,,resizemode-4,quality-100/coronavirus-vaccine-antibodies1_istock.jpg");
+    background-repeat: no-repeat ;
+    /*background-position: center;  */
+    background-size: cover;
+    width: 100%;
+    min-height: 30rem;
+    opacity: 90%;
+    background-color: white;
+}
+
+h6{
+    font-size: 15px;;
+}
+
+
+.form-inline{
+    padding: 2rem;
+    text-align: center;margin-left: 1rem; margin-right: auto; clear: both;
+}
+
+.noContent{
+   color: white;
+   float: left;
+   padding-top: 6rem;
+   padding-left: 2rem;
+}
+
+.card-body{
+    background: white;
+    background-color:rgba(245, 208, 214, 0.74);
+    background: linear-gradient(180deg,rgb(50, 50, 212) 0%,rgb(193, 209, 209));
+    position: relative;
+    top: 0;
+    transition: top ease 0.1s;
+}
+.card-body:hover{
+    top: -10px;
+    border-radius: 5px;
+}
+
+.tooltipcontent{
+    visibility: hidden;
+    width: auto;
+    background-color: black;
+    opacity: 85%;
+    color: white;
+    border-radius: 4px;
+    padding: 4px;
+    position: absolute !important;
+    z-index: 1 !important;
+}
+
+.fa:hover .tooltipcontent{
+    visibility: visible;
+    top: 100%;
+    left: 50%;
+    margin-left: auto;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+@media (max-width:600px)
+{
+    
+    form.form-inline{
+        text-align: justify;
+        margin-left: 0rem !important;
+    }
+
+    form.form-control{
+        width: 1rem;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #cen{
+        text-align: left;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        background-color: white;
+    }
+    ul{
+        padding: 0px !important;
+    }
+}

@@ -1,0 +1,24 @@
+  .cardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    }
+    
+  .card{
+    width: 300px;
+    margin: 15px;
+    height: auto;
+    background-color: wheat;
+    }
+    
+     .pagination{
+      position: absolute;
+      margin-top: 30px;
+      margin-bottom: 60px;
+      right: 20px;
+       background-color: rgb(90, 70, 76);
+    }
+  
+  

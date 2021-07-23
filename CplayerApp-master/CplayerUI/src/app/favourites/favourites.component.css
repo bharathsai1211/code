@@ -1,0 +1,39 @@
+.cardContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 3vh;
+  /* background-color: rgb(43, 98, 180); */
+  margin-bottom: 3vh;
+  }
+  
+.card{
+  width: 300px;
+  margin: 15px;
+  height: auto;
+  background-color: bisque;
+  }
+  
+.sidenav .mat-toolbar {
+     background: inherit;
+   }
+   
+.mat-toolbar.mat-primary {
+     position: sticky;
+     top: 0;
+     z-index: 1;
+   }
+   
+.button-pos{
+  position: relative;
+  margin: 2vh auto;
+   }
+
+   .pagination{
+    position: absolute;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    right: 20px;
+     background-color: rgb(90, 70, 76);
+  }
+

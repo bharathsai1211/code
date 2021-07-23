@@ -1,0 +1,41 @@
+.formTaker-Expansion{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-top: 0%;
+  margin: 2vh auto;
+  height:5%;
+  margin-bottom: 0%;
+ 
+ }
+ .buttn{
+    width: 20%;
+    margin: 2vh auto;
+    background-color: rgb(54, 61, 168);
+ }
+ .cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(177, 181, 189);
+    text-align: justify;
+    justify-content: center;
+    margin-top: 10%;
+  }
+ .card{
+    width: 210px;
+    margin: 12px;
+  }
+ 
+ .pagination{
+    position: absolute;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    right: 20px;
+    background-color: rgb(90, 70, 76);
+  }
+  .input-group{
+    margin-top: 3%;
+  }
+
+
+  

@@ -1,0 +1,19 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<h1>My Favourites!</h1>
+<div class="favourite">
+<mat-card class="favourite-card" *ngFor="let match of matches">
+    <mat-card-content>
+        <mat-card-title >{{match.description}}</mat-card-title>
+        <mat-card-subtitle> {{match?.date  | date:'yyyy-MM-dd'}}</mat-card-subtitle>
+      
+        <mat-card-subtitle>{{match.title}}</mat-card-subtitle>
+      </mat-card-content>
+    <mat-card-footer>
+        <button class="deleteButton" mat-raised-button color=warn (click)="deleteFromFavouriteList(match)">Delete </button>  
+  
+    </mat-card-footer>
+  </mat-card>
+  <br>
+</div>

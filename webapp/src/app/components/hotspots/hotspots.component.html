@@ -1,0 +1,29 @@
+<div class="body">
+
+  <div class="noContent" *ngIf="isEmpty">
+    <h2>No Countries added in the WatchList..</h2>
+    <h3>Please click on the Star Icon to Add one...</h3>
+    <button type="button" class="btn btn-success" routerLink="/home">HOME</button>
+  </div>
+
+
+<div class="card-deck pb5" style="padding: 6rem !important;">
+    <div style="min-width: 15rem; max-width: 15rem; margin: 1rem;" class="card" *ngFor="let invent of countrys.countries ">
+      <!-- <img style="width: 100%; height: 10rem;" class="card-img-top" src="{{invent.countrydata.flag}}" alt="Card image cap"> -->
+      <div class="card-body">
+        <img style="width: 3rem; height: 2rem; float: right;" src="{{invent.flag}}" alt="Card image cap">
+        <h5 class="card-title" style="font-size: 20px;">{{invent.country}}</h5>
+        <h6>{{invent.continent}}</h6>
+        <h6>Cases:{{invent.cases}}</h6>
+        <h6>Deaths:{{invent.deaths}}</h6>
+         <h6>Active:{{invent.active}}</h6>
+      </div>
+      <div class="card-footer">
+        <i class="fa fa-trash" (click)="deleteCountry(invent.id)" style="font-size:24px"></i>
+      <!--  <i class="fa fa-phone" style="font-size:24px; padding-left: 1rem; position: relative;"><span class="tooltipcontent">9878564534</span></i> -->
+      </div>
+    </div>
+    
+  <!-- </div>
+  <div id="cen"><pagination-controls (pageChange) = "p = $event"></pagination-controls></div>
+  </div> -->

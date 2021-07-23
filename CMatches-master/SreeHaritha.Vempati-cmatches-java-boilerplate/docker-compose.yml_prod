@@ -1,0 +1,43 @@
+version: '3.3'
+services:
+  user-app:
+   image: sreeharithavempati/cmatches:cricket-user
+   container_name: user-app-docker
+   restart: always
+   network_mode: host
+   ports:
+     - 5613:5613
+   expose:
+     - 5613
+   depends_on:
+     - cricketdatabase-mysql
+  movie-app:
+   image: sreeharithavempati/cmatches:cricket-app
+   container_name: movie-app-docker
+   restart: always
+   network_mode: host
+   ports:
+     - 5612:5612
+   expose:
+     - 5612
+   depends_on:
+     - cricketdatabase-mysql
+
+  cricketdatabase-mysql:
+   image: mysql:5.5
+   container_name: mysql-docker
+   network_mode: host
+   ports:
+     - "3306:3306"
+   environment:
+     MYSQL_ROOT_PASSWORD: root
+     MYSQL_DATABASE: cricketdatabase
+     MYSQL_USER: fsemovieuser
+     MYSQL_PASSWORD: FsePassword
+  
+  movie-front:
+    image: sreeharithavempati/cmatches:cricket-angular
+    container_name: movie-front-docker
+    network_mode: host
+    ports:
+      - 4200:4200

@@ -1,0 +1,82 @@
+<!-- Login form -->
+<app-header></app-header>
+<!-- <div class="img">
+        <div class="form">
+<form [formGroup]="loginForm" (ngSubmit)="logIn()">
+    <div>
+            <div class="login"> Login</div>   
+            <br/>
+        <label for="email">Email</label>
+        <input type="text" placeholder="Enter Email" formControlName="email">
+        <small class="esmall" *ngIf="email.invalid && (email.dirty || email.touched)">
+            email is mandatory field
+        </small>
+        
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter Password" formControlName="password">
+        <small *ngIf="password.invalid && (password.dirty || password.touched)">
+            <small *ngIf="password.errors.required">
+                password cannot be left blank
+            </small>
+            <small *ngIf="password.errors.minlength">
+                password must have minimum 8characters
+            </small>
+        </small>
+    </div>
+
+    <div class="but">
+        <button [disabled]="!loginForm.valid" value="sign In">Log In</button>
+        
+        <button (click)="tosignup()" value="signIn">New User</button>
+    </div>
+</2form>
+</div>
+</div> -->
+
+<div  class="col-md-6 offset-md-3 mt-5">
+    
+
+<div class="card mx-auto">
+    <h1 class="card-header text-center">Login</h1>
+    <div class="card-body">
+        <form [formGroup]="loginForm" (ngSubmit)="logIn()">
+            <div class="form-group">
+                <label for="email">Username</label>
+                <input type="text" formControlName="email" class="form-control"/>
+                <small class="esmall" *ngIf="email.invalid && (email.dirty || email.touched)">
+                    email is mandatory field
+                </small>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" formControlName="password" class="form-control" />
+                <small *ngIf="password.invalid && (password.dirty || password.touched)">
+                    <small *ngIf="password.errors.required">
+                        password cannot be left blank
+                    </small>
+                    <small *ngIf="password.errors.minlength">
+                        password must have minimum 8characters
+                    </small>
+                </small>
+            </div>
+            <div class="form-group">
+                    <button id="re" (click)="tosignup()" class="btn btn-primary float-right">
+                            <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1 "></span>
+                            Register
+                        </button>
+                <button [disabled]="!loginForm.valid" class="btn btn-primary float-right">
+                    <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                    Login
+                </button>
+                <!-- <a  class="btn btn-link">Register</a> -->
+                
+            </div>
+        </form>
+    </div>
+</div>
+
+</div>
+
+<app-footer></app-footer>

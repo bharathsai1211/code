@@ -1,0 +1,39 @@
+
+.row{
+  margin-top: 0%;
+}
+.fa{
+  font-size: 2em !important;
+  padding: 0.5em !important;
+  color: #fff;
+}
+div #c1 p,h5{
+  font-size: 4em;
+  color: rgb(44, 93, 226); 
+}
+
+#connect a{
+height: 2vh;
+width: 2vw;
+}
+
+.footer-sec
+{
+ 
+  position: relative;
+  background-color: rgb(26, 145, 224);
+  text-align: center;
+  height: auto;
+  width: 100%;
+}
+#foot{
+  text-align: center;
+}
+.row h1,h6{
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 120%;
+}
+
+
+
+

@@ -1,0 +1,58 @@
+<div class="overflow-auto pos">
+  <header>
+    <!--Navigation Starts Here-->
+    <nav class="navbar  navbar-expand-lg navbar-light mynav">
+
+      <img src="../../assets/favicon.jpeg" width="60" height="60" class="d-inline-block align-top" alt="" loading="lazy" />
+      <h1 style="margin-left:2%">Cricket World!!</h1>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item c-dark">
+            <a class="nav-link" [routerLink]="['search']" data-toggle="collapse" data-target="#navbarSupportedContent" routerLinkActive="active-link" ><h2>Search</h2>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['favourites']" data-toggle="collapse" data-target="#navbarSupportedContent" routerLinkActive="active-link"><h2>Favourites</h2></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['recommended']" data-toggle="collapse" data-target="#navbarSupportedContent"  routerLinkActive="active-link">
+            <h2>Recommended</h2>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['statistics']" routerLinkActive="active-link" data-toggle="collapse" data-target="#navbarSupportedContent" aria-disabled="false"><h2>Statistics</h2></a>
+          </li>
+         
+          <li>
+            <a class="nav-link" aria-disabled="false" routerLinkActive="active-link" data-toggle="collapse" data-target="#navbarSupportedContent" (click)="logout()" id="logout"> <h2>Log Out</h2></a>
+
+          </li>
+          <li>
+
+              <a class="nav-link" [routerLink]="['edit']"  data-toggle="collapse" data-target="#navbarSupportedContent"  aria-disabled="false"> <img class="img" src={{user.image}} width="50" height="50" style="margin:0px;"> </a>
+            </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <!--Navigation End's Here-->
+  </header>
+  <section >
+
+  <div style="height:100vh;" class="container-fluid">
+
+    <router-outlet></router-outlet>
+    <router-outlet name='statOpener'></router-outlet>
+
+  </div>
+</section>
+</div>
+<!-- Footer-Section -->
+<!-- <app-footer></app-footer> -->

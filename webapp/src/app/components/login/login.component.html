@@ -1,0 +1,85 @@
+<div class="back">
+<div class="col-md-12" style="padding-top: 2rem; padding-bottom: 2rem;">
+    <div class="card card-container">
+      <img
+        id="profile-img"
+        src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
+        class="profile-img-card"
+      />
+      <h3 style="text-align: center;">LOGIN</h3>
+      <form
+        *ngIf="!isLoggedIn"
+        name="form"
+        (ngSubmit)="f.form.valid && onSubmit()"
+        #f="ngForm"
+        novalidate
+      >
+        <div class="form-group">
+          <label for="email">Email ID</label>
+          <input
+            type="text"
+            class="form-control"
+            name="email"
+            [(ngModel)]="form.email"
+            required
+            #email="ngModel"
+          />
+          <div
+            class="alert alert-danger"
+            role="alert"
+            *ngIf="email.errors && f.submitted"
+          >
+            Username is required!
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <i class="material-icons" style="float: right;" matSuffix (click) ="hide =!hide">{{hide ? 'visibility':'visibility_off'}}</i>
+          <input
+            type="password"
+            class="form-control"
+            name="password"
+            [(ngModel)]="form.password"
+            required
+            minlength="6"
+            #password="ngModel"
+            [type]="hide ? 'text':'password'"
+
+            
+          />
+          
+          
+          <div
+            class="alert alert-danger"
+            role="alert"
+            *ngIf="password.errors && f.submitted"
+          >
+            <div *ngIf="password.errors.required">Password is required</div>
+            <div *ngIf="password.errors.minlength">
+              Password must be at least 6 characters
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-success btn-block">
+            Login
+          </button>
+        </div>
+        <div style="text-align: center;">New User? <a routerLink="/register">Register here</a></div>
+        <div class="form-group">
+          <div
+            class="alert alert-danger"
+            role="alert"
+            *ngIf="f.submitted && isLoginFailed"
+          >
+            Login failed: {{ errorMessage }}
+          </div>
+        </div>
+      </form>
+  
+      <div class="alert alert-success" *ngIf="isLoggedIn">
+        Logged in Successfully.
+      </div>
+    </div>
+  </div>
+  </div>

@@ -1,0 +1,41 @@
+version: '3.2'
+services:
+  cricketuser-app:
+   image: cricketuser-app
+   build: userservice/
+   restart: always
+   network_mode: host
+   ports:
+     - 5613:5613
+   expose:
+     - 5613
+   depends_on:
+     - cricketdatabase-mysql
+  cricket-app:
+   image: cricket-app
+   build: favouriteservice/
+   restart: always
+   network_mode: host
+   ports:
+     - 5612:5612
+   expose:
+     - 5612
+   depends_on:
+     - cricketdatabase-mysql
+
+  cricketdatabase-mysql:
+   image: mysql:5.5
+   network_mode: host
+   ports:
+     - "3306:3306"
+   environment:
+     MYSQL_ROOT_PASSWORD: root
+     MYSQL_DATABASE: cricketdatabase
+      
+  angular:
+    image: angular1-app
+    build: CMatchesUI
+    network_mode: host
+    container_name: angular-dockerr
+    ports:
+      - 4200:4200

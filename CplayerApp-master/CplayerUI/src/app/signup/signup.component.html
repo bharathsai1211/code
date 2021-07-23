@@ -1,0 +1,150 @@
+<!-- Sign Up form -->
+
+<app-header></app-header>
+<!-- <div class="img">
+<div class="form">
+<form [formGroup]="loginForm" (ngSubmit)="signIn()">
+        <div class="signup"><u>Sign Up</u></div>
+   <div>
+      <label for="email">Email</label>
+      <input class="email" type="text" placeholder="  Enter email" formControlName="email"><br>
+      <small class="err" *ngIf="email.invalid && (email.dirty || email.touched)">
+         Email is mandatory field
+      </small>
+   </div>
+   <div>
+      <label for="password">Password</label>
+      <input class="password" type="password" placeholder="  Enter password" formControlName="password"><br>
+      <small *ngIf="password.invalid && (password.dirty || password.touched)">
+         <small class="err" *ngIf="password.errors.required">
+            Password cannot be left blank
+         </small>
+         <small class="err" *ngIf="password.errors.minlength">
+            Password must have minimum 8characters
+         </small>
+      </small>
+   </div>
+   <div>
+      <label for="name">Name</label>
+      <input class="name" type="text" placeholder="  Enter your name" formControlName="name"><br>
+      <small class="err" *ngIf="name.invalid && (name.dirty || name.touched)">
+         Name is mandatory field
+      </small>
+   </div>
+   <div>
+      <label for="mobile">Mobile</label>
+      <input class="mobile" type="text" placeholder="  Enter your mobile" formControlName="mobile"><br>
+      <small class="err" *ngIf="mobile.invalid && (mobile.dirty || mobile.touched)">
+         Enter a valid 10 digit Mobile Number
+      </small>
+   </div>
+
+   <div class="image-upload-container btn btn-bwm">
+      <label>Image</label>
+      <input #imageInput class="image" type="file" (change)="onFileChanged($event)">
+   </div>
+
+   <div class="but">
+      <button [disabled]="!loginForm.valid" value="sign Up">Sign Up</button>
+     
+      <button (click)="tologin()" value="log In">Already Registered</button>
+   </div>
+</form>
+</div>
+</div> -->
+
+
+<div class="col-md-6 offset-md-3 mt-5">
+<div class="card mx-auto">
+        <h1 class="card-header text-center">Register</h1>
+        <div class="card-body">
+            <form [formGroup]="loginForm" (ngSubmit)="signIn()">
+    
+             
+                <div class="form-group">
+                    <label for="username">User Name</label>
+                    <input type="text" formControlName="email" class="form-control"  />
+                    <small class="err" *ngIf="email.invalid && (email.dirty || email.touched)">
+                        Email is mandatory field
+                     </small>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" formControlName="password" class="form-control" #pass />
+                    <small *ngIf="password.invalid && (password.dirty || password.touched)">
+                        <small class="err" *ngIf="password.errors.required">
+                           Password cannot be left blank
+                        </small>
+                        <small class="err" *ngIf="password.errors.minlength">
+                           Password must have minimum 8characters
+                        </small>
+                     </small>
+                </div>
+                <div class="form-group">
+                    <label for="password">Conform Password</label>
+                    <input type="password" formControlName="cpassword" class="form-control"  />
+                    
+                    <small *ngIf="cpassword.invalid && (cpassword.dirty || cpassword.touched)">
+                        <small class="err" *ngIf="cpassword.errors.required">
+                           Password cannot be left blank
+                        </small>
+                        <small class="err" *ngIf="cpassword.errors.minlength">
+                           Password must have minimum 8characters
+                        </small>
+                        <small *ngIf="matcher()">& Both password's should match</small>
+                     </small>
+                </div>
+                <div class="form-group">
+                    <label for="firstName">Name</label>
+                    <input type="text" formControlName="name" class="form-control"/>
+                    <small class="err" *ngIf="name.invalid && (name.dirty || name.touched)">
+                        Name is mandatory field
+                     </small>
+                </div>
+                <div class="form-group">
+                    <label for="firstName">Mobile Number</label>
+                    <input type="number" formControlName="mobile" class="form-control"/>
+                    <small class="err" *ngIf="mobile.invalid && (mobile.dirty || mobile.touched)">
+                        Enter a valid 10 digit Mobile Number
+                     </small>
+                </div>
+                <div class="input-group">
+                    <!-- <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupFileAddon01">Upload Profile Image</span>
+                    </div> -->
+                    <div class="custom-file"> 
+                      <input type="file" #imageInput class="custom-file-input" id="inputGroupFile01"
+                        aria-describedby="inputGroupFileAddon01" (change)="onFileChanged($event)">
+                      <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                    </div>
+                  </div>
+                  <br>
+                  <!-- <div class="input-group">
+                      <div>
+                        <label for="username"><h3>Select Image</h3></label><br/>
+                    </div>
+                        <div>
+                        <input #imageInput class="image" type="file" (change)="onFileChanged($event)"/>
+                    </div>
+                    </div> -->
+                  
+                <div class="form-group">
+
+                        <button id="re" (click)="tologin()" value="log In" class="btn btn-primary float-right">
+                                Already Registerd ?
+                            </button>
+                    <button [disabled]="!loginForm.valid" class="btn btn-primary float-right">
+                        Register
+                    </button> 
+                    
+                       
+                    
+                </div>
+               
+
+                
+            </form>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

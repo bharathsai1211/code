@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<h1>Upcoming Matches!</h1>
+<div class="upcoming">
+<mat-card class="upcoming-card" *ngFor="let match of upcomingMatches">
+    <mat-card-content>
+        <mat-card-title >  {{match["team-1"]}}</mat-card-title>
+        <p><b>Vs</b></p>
+        <mat-divider [vertical]="true"></mat-divider>
+        <mat-card-title > {{match["team-2"]}}</mat-card-title>
+      </mat-card-content>
+    <mat-card-footer>
+        <button  class="addButton" mat-raised-button color=primary (click)="addToFavouriteList(match)">Add To Favorites  <i class="fa fa-star" aria-hidden="true"></i></button>  
+        <button  mat-raised-button color=primary (click)="viewDetails(match)">View Details</button>  
+  
+    </mat-card-footer>
+  </mat-card>
+  <br>
+</div>
